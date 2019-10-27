@@ -1,4 +1,21 @@
 ****************
+BHDB V2019.10.27
+-Uygu teknolojilerini geliştirdiğimiz bu yıl da artık bir çok servisimizde uydu teknolojileri kullanılarak daha hızlı,
+daha kapsamlı ve daha derin işlemleri yenileme ve başarı süresi olarak dakikalara indirgendi.
+-Bu versiyonda bazı buglar giderildi.
+-Veri transfer durumlarında yaşanan donma, eksik aktarma ve yaşanan teknik hatalar giderildi.
+-Filtreleme hacmi 10.000.000 u geçerken yeni sunucumuz TR6 ve EU7 sunucumuz aktif.
+-Yakın zamanda duyurduğumuz duygusal analiz sistemimiz, artık tam anlamıyla çalışır vaziyette, artık sorgu kısmında 
+girilen kişisel bilgiler ile yapılan sanal paramk izi taramalarından analiz dosyası oluşturuluyor.
+-Yıl sonu işlem grafiği özelliği eklendi.
+-İstatistik servisi yeniden dizayn edildi.
+-BHDB Kriptografi Servisi artık direk filtreleme sistemine entegre otomatik çalışıyor.
+-BHDB 2009 yılında tasarlanan dap10 işletim sistemi artık yeniden proje listesinde.
+-BHDB dw servisleri V2019.11.28 sürümünde aktif olacak.
+
+
+
+****************
 BHDB V2019.10.25
 -Zamanlanmış işlemler artık daha hızlı ve anlık tamamlanacak şekilde tasarlandı.
 -BHDB Bulut noktamız olan aynı zamanda arşivlerimizi bulundurduğumuz sunucular BHDB Filtreleme Sistemine bağlandı.
@@ -13,7 +30,7 @@ faaliyet göstermeye başladı.
 
 ****************
 BHDB V2019.09.27
-Arayüz @ınstagram.bh servisinde işlem yaparken yaşanan donma sorunu ortadan kaldırıldı.
+-Arayüz @ınstagram.bh servisinde işlem yaparken yaşanan donma sorunu ortadan kaldırıldı.
 
         #BHDB FİLTRELEME SİSTEMİ#        #BHDB 2005-2020#
 #GÜNCELLEME DÖKÜMÜ V2019.09.27 DEN SONRA BURADA BULUNMAKTADIR#
