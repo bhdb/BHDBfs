@@ -1,4 +1,19 @@
 ****************
+BHDB V2019.11.28.0001
+- Beklenen Güncelleme - 
+-İkinci Güvenlik Servisi BHDB Ağına Entegre Edildi ve Aktif Olarak Yayında.
+-İkinci Filtreleme Sistemi Yayında.
+-Filtrelemede Yeni Dönem!:
+       - Artık Yapılan Bilimum Filtrelemelerde Şeffaflık Politikalarındaki Değişiklik Sebebi ile Bilgi, Belge Evrak Paylaşımı Olmayacak.
+       - Sistem Artık İki Güvenlik Servisine Bağlı.
+       - 4 Yeni Sistem Eklendi.
+                - Duygusal Analiz Sistemi.
+                - Mobil Sistem MMX.
+                - Kriptografi Servisi Beta.
+                - BHFS2 Analiz ve İşleme Alma Sistemi.
+
+
+****************
 BHDB V2019.11.15
 -Servis sunucuları ayrılarak bazı servislerin az kullanım esnasında diğer servisin yoğunluğu yüzünden yavaşlama sorunu kaldırıldı.
 
