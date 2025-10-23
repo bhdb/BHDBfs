@@ -1,0 +1,108 @@
+Yürürlük Tarihi: 23 Ekim 2025
+Son Güncelleme: 23 Ekim 2025
+Sürüm: v3.1
+Doküman Kodu: BHDB-GP-2025.08.15.2
+
+1. Giriş ve Genel Bakış
+ByHackDB (BHDB) Filtreleme Sistemi ("Sistem", "Servis", "Biz"), küresel internet faaliyetleriyle alakalı 5053 farklı hizmeti +50 servis ve uygulamayla sunan özel bir filtreleme ve güvenlik altyapısıdır. Müşterilerimizin ("Kullanıcı", "Siz") gizliliğini korumak, en temel önceliğimiz ve operasyonel varoluş nedenimizdir. Bu Gizlilik Politikası ("Politika"), BHDB Filtreleme Sistemi'nin hangi verileri neden, nasıl topladığını, işlediğini, sakladığını ve koruduğunu açıklamayı amaçlar.
+
+Temel felsefemiz "Güvenlik için Minimum Veri, Maksimum Anonimlik" ilkesidir. Sistemimiz, bireysel kullanıcı kimliklerini değil, siber tehdit kalıplarını ve davranışsal anomalileri hedefler. Kişisel veri toplama ve işleme faaliyetlerimiz, yalnızca meşru güvenlik amaçlarıyla sınırlıdır ve tamamen anonimleştirilmiş, toplulaştırılmış veya psödonimleştirilmiş şekilde yürütülür.
+
+2. Toplanan Veri Türleri ve Toplama Amaçları
+Sistemimizin çalışması için gerekli olan ve doğrudan sizin kimliğinizi değil, sistemle etkileşiminizin güvenliğini hedef alan veri türleri aşağıda detaylandırılmıştır:
+
+2.1. Teknik ve Oturum Verileri:
+
+Cihaz Bilgileri: İşletim sistemi versiyonu, donanım modeli (cihaz kimliği DEĞİL), sistem dili ve bölgesel ayarlar. Bu veriler, saldırı vektörlerinin belirli cihaz türlerini hedef alıp almadığını anlamak ve uyumluluk sorunlarını gidermek için kullanılır.
+
+Ağ Bilgileri: IP adresi (işlendikten sonra anonimleştirilir), bağlantı süreleri, kullanılan protokoller ve trafik hacimleri. Bu veriler, coğrafi olarak yoğunlaşan saldırıları tespit etmek ve ağ performansını optimize etmek için kullanılır.
+
+Sistem Logları: Sisteme giriş/çıkış zaman damgaları, hata mesajları, işlem kimlikleri (Transaction ID'ler). Bu veriler, sistem sağlığını izlemek ve yetkisiz erişim girişimlerini tespit etmek için kullanılır.
+
+2.2. Güvenlik ve Tehdit Verileri (Birincil Odak Alanımız):
+
+Davranışsal Metrikler: Sistem içinde gerçekleştirilen işlem türleri, komut kullanım sıklıkları, navigasyon alışkanlıkları ve oturum süreleri. Bu veriler, Akıllı Tehdit Öngörü Sistemi ve Otonom Anomali Tespiti tarafından, normal kullanıcı davranışının bir profilini oluşturmak ve bu profilden sapan anormal davranışları (örneğin, iç tehdit) tespit etmek için kullanılır. Bu profil asla bireysel bir kullanıcıya değil, bir "rol" veya "kullanım grubu"na aittir.
+
+Tehdit Göstergeleri (IoC'ler): Kötü amaçlı yazılım imzaları, şüpheli URL'ler, phishing girişimleri, bilinen zararlı IP adresleri ve saldırı kalıpları. Bu veriler, küresel tehdit veritabanımızı beslemek ve tüm müşterilerimizi proaktif olarak korumak için kullanılır.
+
+Duygusal Analiz Verileri (Ses/Görüntü İşleme): HSW Güvenlik Servisi kapsamında, yalnızca yetkili erişim noktalarında (fiziksel veri merkezleri, yönetim konsolları) ses ve görüntü analizi yapılır. Toplanan ses verileri, konuşma içeriğini DEĞİL, ses tonundaki stres seviyeleri, heyecan veya olağandışı kalıpları analiz eder. Görüntü verileri, yüz tanıma ile değil, davranışsal anomalileri (hızlı hareketler, yetkisiz alanlara yaklaşma) tespit etmek için kullanılır. Bu veriler gerçek zamanlı işlenir ve ham hali asla kalıcı olarak saklanmaz; yalnızca anomali skoru kaydedilir.
+
+2.3. Servis Kullanım Verileri:
+
+Dashboard Etkileşimleri: Kullanıcıların Kişiselleştirilebilir Dashboard'ta hangi widget'ları kullandığı, sürükle-bırak düzenlemeleri. Bu veriler, kullanıcı deneyimini iyileştirmek ve arayüzü daha sezgisel hale getirmek için toplulaştırılmış şekilde kullanılır.
+
+Sesli Komut Günlükleri: Sesli Kontrol Arayüzü aracılığıyla verilen komutların metin dökümleri. Bu dökümler, komutun anlaşılması ve yerine getirilmesi için işlendikten sonra, ses kaydıyla birlikte derhal silinir. Metin dökümleri, doğal dil işleme algoritmalarının geliştirilmesi için anonimleştirilerek kullanılabilir.
+
+3. Veri Anonimizasyonu ve Psödonimizasyonu
+Topladığımız tüm veriler, kimliği belirli bir bireyle ilişkilendirilemeyecek şekilde işlenir. Kullandığımız yöntemler:
+
+Tokenizasyon: Doğrudan tanımlayıcılar (geçici IP adresi gibi), işlem tamamlandıktan sonra geri döndürülemez bir token ile değiştirilir.
+
+Toplulaştırma (Aggregation): Bireysel veri noktaları, istatistiki analiz için büyük gruplar halinde birleştirilir. Tekil bir kullanıcıyı izlemek mümkün değildir.
+
+Veri Maskeleme: Gerekli olduğu durumlarda, verilerin yalnızca genel bir kalıp oluşturmaya yarayan kısımları saklanır, geri kalanı çıkarılır.
+
+Sentetik Veri Üretimi: AI modeli eğitimlerimizde, gerçek kullanıcı verileri yerine, gerçek verilerin istatistiki özelliklerini taşıyan sentetik veri kümeleri kullanılır.
+
+4. Verilerin Kullanım Amaçları
+Toplanan veriler yalnızca ve yalnızca aşağıdaki meşru amaçlar için kullanılır:
+
+Sistem ve Ağ Güvenliğinin Sağlanması: Siber saldırıları, yetkisiz erişim girişimlerini, veri ihlali risklerini tespit etmek ve önlemek.
+
+Hizmet Geliştirme ve Optimizasyon: Performans sorunlarını gidermek, Öngörülü Kaynak Yönetimi ile kapasite planlaması yapmak, yeni özellikler geliştirmek.
+
+Yasal ve Düzenleyici Yükümlülüklerin Yerine Getirilmesi: GDPR/HIPAA Uyumluluk Asistanı aracılığıyla, yasalara uygun veri işleme süreçlerini yürütmek ve denetim trail'leri (Blockchain Doğrulama Sistemi) oluşturmak.
+
+Kullanıcı Deneyimini Kişiselleştirme: Kişiselleştirilebilir Dashboard'ta kullanıcının rolüne uygun layout önerileri sunmak. Bu kişiselleştirme, bireysel değil, "Sistem Yöneticisi", "Güvenlik Analisti" gibi rol bazlıdır.
+
+5. Veri Saklama ve İmha Politikası
+Saklama Süreleri: Hiçbir ham, anonimleştirilmemiş kişisel veri, işlemi tamamlandıktan sonra 30 günden fazla saklanmaz.
+
+Anonimleştirilmiş Veriler: Anonimleştirilmiş ve toplulaştırılmış tehdit istatistikleri, sistem geliştirme ve küresel tehdit analizi amacıyla süresiz olarak saklanabilir. Bu verilerden bir bireyin kimliği çıkarılamaz.
+
+İmha Protokolleri: Saklama süresi dolan veriler, BTSP (BT Güvenliği Protokolü) NIST 800-88 Rev. 1 standardına uygun şekilde, kurtarılması imkansız olacak şekilde güvenli bir şekilde imha edilir.
+
+6. Veri Paylaşımı ve Aktarımı
+BHDB, müşteri verilerini (anonim tehdit verileri hariç) hiçbir üçüncü taraf şirket, kurum veya organizasyonla satmaz, kiralamaz veya ticari amaçlarla paylaşmaz.
+
+Yasal Zorunluluklar: Yalnızca, yürürlükteki bir mahkeme kararı, kanuni düzenleme veya resmi makam talebi gibi yasal bir zorunluluk olduğunda, yasaların izin verdiği en dar kapsamda bilgi paylaşımında bulunulur.
+
+Hizmet Sağlayıcılar: Edge Computing düğümleri veya bulut altyapıları gibi sınırlı sayıda, veri işleme amaçlı hizmet sağlayıcı kullanılır. Tüm bu sağlayıcılar, BHDB'nin bu Politika'da belirtilen gizlilik ve güvenlik standartlarına sözleşmesel olarak bağlıdır.
+
+Küresel Tehdit İstihbaratı: Zararlı yazılım imzaları, şüpheli IP blokları gibi anonim tehdit göstergeleri, diğer güvenlik kuruluşlarıyla, yine anonim ve toplulaştırılmış şekilde paylaşılabilir. Bu paylaşım, genel siber güvenlik ekosistemini güçlendirmek içindir.
+
+7. Kullanıcı Hakları
+Mevcut veri koruma yasaları uyarınca, kullanıcılarımız aşağıdaki haklara sahiptir:
+
+Bilgi Edinme Hakkı: Hangi verilerinizin işlendiğini öğrenme.
+
+Erişim Hakkı: Verilerinize erişim talep etme.
+
+Düzeltme Hakkı: Yanlış veya eksik verilerinizin düzeltilmesini talep etme.
+
+Silme Hakkı ("Unutulma Hakkı"): Kişisel verilerinizin silinmesini talep etme. Bu hak, GDPR/HIPAA Uyumluluk Asistanı tarafından otomatik olarak işleme alınır.
+
+İtiraz Hakkı: Veri işleme faaliyetlerimize itiraz etme.
+
+Bu haklarınızı kullanmak için, BHDB Veri Koruma Sorumlusu'na (aşağıda iletişim bilgileri bulunmaktadır) resmi bir taleple başvurmanız gerekir. Kimlik doğrulama sürecini müteakiben, talebiniz yasal süreler içinde yerine getirilecektir.
+
+8. Güvenlik Önlemleri
+Verilerinizi yetkisiz erişim, ifşa, değişiklik veya imhadan korumak için son teknoloji önlemler uyguluyoruz:
+
+Kriptografi: Veriler hem depolama sırasında (istirahat halinde) hem de ağ üzerinden iletilirken (hareket halinde) Kuantum Şifreleme Hazırlık Paketi ve Dinamik Anahtar Yönetimi kullanılarak şifrelenir.
+
+Fiziksel Güvenlik: Veri merkezlerimize fiziksel erişim, biyometrik doğrulama, HSW Güvenlik Servisi ve 7/24 güvenlik personeli ile katı bir şekilde kısıtlanmıştır.
+
+Erişim Kontrolü: Çok faktörlü kimlik doğrulama ve rol tabanlı erişim kontrolleri (RBAC) uygulanır. Tüm erişimler Blockchain Doğrulama Sistemi'nde değiştirilemez bir şekilde kayıt altına alınır.
+
+9. Politikadaki Değişiklikler
+Bu Politika, teknolojideki gelişmeler, yasal düzenlemelerdeki değişiklikler veya hizmetlerimizdeki güncellemeler doğrultusunda güncellenebilir. Bu sayfayı periyodik olarak gözden geçirmenizi tavsiye ederiz. Önemli değişiklikler olduğunda, size Sistem dashboard'unuz veya e-posta yoluyla bildirimde bulunacağız.
+
+10. İletişim
+Bu Gizlilik Politikası hakkında herhangi bir sorunuz, endişeniz veya veri haklarınızı kullanmak için bir talebiniz varsa, lütfen aşağıdaki kanal aracılığıyla bizimle iletişime geçin:
+
+BHDB Veri Koruma Sorumlusu
+E-posta: gizlilik@bhdbfs.digital 
+Güvenli Kullanıcı Portalı: https://secure.bhdbfs.digital
+
+
