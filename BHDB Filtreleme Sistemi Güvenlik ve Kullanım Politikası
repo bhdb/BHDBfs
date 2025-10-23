@@ -1,0 +1,96 @@
+Yürürlük Tarihi: 23 Ekim 2025
+Sürüm: v3.2.1
+Doküman Kodu: BHDB-GUP-2025.08.15.21
+Politika Türü: ZORUNLU ve BAĞLAYICI
+
+1. Giriş: Sıfır Tolerans Felsefesi
+BHDB (BHDB) Filtreleme Sistemi ("Sistem"), küresel dijital ekosistemin en kritik altyapılarından birini oluşturur. Bu sistemin güvenliği, ulusal ve küresel siber uzayın güvenliği ile eşdeğerdir. Bu nedenle, güvenlik konusunda agresif, proaktif ve sıfır toleranslı bir politika izlemekteyiz.
+
+Bu belge, bir kullanım kılavuzu değil, bir güvenlik emridir. Sisteme erişiminiz, bu politikanın tamamını okuduğunuz, anladığınız ve şartsız kabul ettiğiniz anlamına gelir. "Bilmiyordum" veya "Anlamamıştım" gibi gerekçeler, hiçbir yaptırım karşısında geçerli değildir.
+
+2. Kullanıcı Özgürlüğü ve Sorumlulukları
+BHDB Filtreleme Sistemi, lisanslı ve kısıtlı kullanıcılarına, küresel tehditlere karşı benzersiz bir analiz, sınırsız erişim ve müdahale özgürlüğü sunar. Ancak ağır sorumluluklar ve sıkı güvenlik kuralları çerçevesinde tanımlanmış bir ayrıcalıktır.
+
+Sistem içindeki teknik ve operasyonel eylemlerinizde özgürsünüz, ancak Sistem'in varlığını, işleyişini, metodolojilerini ve altyapısını koruma konusunda hiçbir özgürlüğünüz yoktur; yalnızca mutlak yükümlülükleriniz vardır.
+*Burada en önemli görmenizi istediğimiz sisteme yüklediğiniz her bir metin, görsel, ses dosyalarının 3. parti bir işlev çalıştıracak eyleme sebebiyet vermesinden sorumlu olacaksınız. Diğer bir söylemle sistemin kullanımında özgür fakat güvenliğinden sorumlu olacaksınız. Herhangi bir olumsuz sonuça varacak, saldırı planlaması, bilginiz dışında bile olsa yüklediğiniz içeriklerin tamamında veya bir kısmında saldırı ibareleri olması öncelikle işlem hakkınızın yanmasına ardından HSW tarafından tespit edilmiş loglarınıza başta(!) dijital eylemlerle karşılık vermemize sebep olacaktır. Sorumluluk alanınızda olan diğer konu sistemin görsellerini çekmek stoklamak herhangi referansı olmayan bir kişiyle sistemin ifşasına sebep olabilecek içerikleri hazırlama veya yayınlamanızın da aynı duruma sebep olacağını bildiririz. Bunun ile alakalı net detaylar tekraren aşağıda verilmiştir.
+
+
+3. Mutlak Yasaklar ve Agresif Yaptırımlar
+Aşağıda listelenen eylemler, en ciddi güvenlik ihlalleri olarak kabul edilir ve anında, otomatik ve geri dönüşü olmayan yaptırımlarla sonuçlanır.
+
+3.1. Görüntü ve Veri Yakalama Yasağı:
+
+Yasak: Sistem arayüzünün, dashboard'unun, veri çıktılarının, loglarının veya herhangi bir bileşeninin ekran görüntüsünü almak, ekran kaydı (screen recording) yapmak, fotoğrafını çekmek veya fiziksel olarak kopyalamak.
+
+Tespit Mekanizması: HSW Güvenlik Servisi, göz takip (eye-tracking) ve anomali tespit yazılımları, kullanıcının kamera ve ekran yakalama yazılımlarını aktif hale getirmesini, ekran parlaklığındaki anormal değişiklikleri (fotoğraf flaşı) ve hatta kullanıcının ekrana karşı el hareketlerini (telefon ile fotoğraf çekme) dahi tespit edebilir.
+
+Anında Yaptırım: Tespit anında;
+
+Kullanıcı oturumu sonlandırılır.
+
+Tüm erişim hakları kalıcı olarak iptal edilir.
+
+İhlal, Blockchain Doğrulama Sistemi'ne değiştirilemez bir şekilde kaydedilir.
+
+BHDB, konuyu tüm yasal haklarını kullanarak takip etme hakkını saklı tutar. Bu konudaki hangi ülke ve merkezimizdeki yasal haklarımızı kullanacağımız tamamen saklıdır. (Bknz. BHDB Faaliyet Gösterilen Ülkeler.)
+
+
+3.2. Bilgi İfşası ve Sistemi Açığa Çıkarma Yasağı:
+
+Yasak: Sistemin varlığı, kapasitesi, çalışma prensipleri, AI modelleri, kuantum şifreleme detayları veya altyapısal bilgileri hakkında üçüncü şahıslarla (izin verilmeyen BHDB personeli dışında) her türlü sözlü, yazılı veya dijital paylaşımda bulunmak. Bu kapsamda herhangi bir sebeple destek almak bahanesi ile erişim veya bilgi paylaşımı yasaktır. Size özel bir müşteri temsilcisi zaten 7/24 hazırdır.
+
+Tespit Mekanizması: CHIMERA Pasif İstihbarat Servisi, açık ve karanlık web'i sürekli tarayarak BHDB'ye ait herhangi bir bilginin sızıp sızmadığını izler. İçeriden sızan bilgiler, dil modelleri ve dijital parmak izi analizi ile kaynağına kadar takip edilir.
+
+Agresif Yaptırım: İfşa tespit edildiğinde;
+
+Tüm BHDB hizmetlerinden ve işbirliklerinden kalıcı men.
+
+BHDB, ifşayı gerçekleştiren kişi veya kuruluşları hedef alan siber karşı önlemler (counter-measures) alma hakkını kendinde saklı tutar.
+
+
+(!)4. 21 Sunuculuk Küresel Altyapımızın Korunması
+BHDB, dünya çapında konuşlandırılmış, birbirine Project: "Aurora" özel fiber ağı ve Kuantum İletişim Test Ağı (Q-Backbone) ile bağlı 21 adet yüksek güvenlikli sunucu çiftliğinden oluşur. Bu altyapıyı korumak için:
+
+Fiziksel Güvenlik: Her bir tesis, askeri seviyede güvenlik duvarları, biyometrik erişim kontrolleri, yüz tanıma sistemleri, HSW Güvenlik Servisi tarafından yönetilen otonom drone ve güvenlik robotları ile korunmaktadır. Tesislere yetkisiz fiziksel yaklaşım dahi düşmanca bir eylem olarak değerlendirilir.
+
+Siber Güvenlik:
+
+Kuantum Şifreleme: Sunucular arasındaki tüm veri trafiği, kuantum anahtar dağıtımı (QKD) ile şifrelenir. Bu şifrenin kırılması, mevcut teknoloji ile teorik olarak imkansızdır.
+
+Project: "ARES" (Otonom Savunma): Sunucularımıza yönelik herhangi bir siber saldırı, anında tespit edilir ve saldırının kaynağına yönelik otomatize edilmiş karşı saldırı (counter-hack) protokolleri devreye girer. Saldırganın altyapısı, BHDB tehdit olmaktan çıkarılıncaya kadar hedef alınır.
+
+Dağıtık Mimari: 21 sunucudan oluşan ağın tamamının aynı anda devre dışı kalması mümkün değildir. Bir sunucuya yönelik fiziksel veya siber imha girişimi anında, Zaman Makinesi Özelliği ve anlık yedeklerle diğer sunucular üzerinden hizmet kesintisiz devam eder.
+
+5. Veri ve Loglama Politikası
+Sistemde gerçekleştirdiğiniz her eylem izlenmekte, kaydedilmekte ve analiz edilmektedir. Bu bir gizlilik ihlali değil, bir güvenlik zorunluluğudur.
+
+Kapsamlı Loglama: Tıkladığınız her buton, yazdığınız her komut, çalıştırdığınız her sorgu, sesli komutunuzun metin dökümü ve sistemle olan her etkileşiminizin zaman damgası, Blockchain Doğrulama Sistemi'ne değiştirilemez şekilde kaydedilir.
+
+Neden?: Bu sayede, bir güvenlik ihlali veya yetkisiz eylem gerçekleştiğinde, olay "Zaman Makinesi Özelliği" ile saniye saniye yeniden canlandırılabilir ve sorumlu anında tespit edilebilir.
+
+Mahremiyet Değerlendirmesi: Bu veriler, 30 gün sonunda otomatik olarak imha edilir. Ancak, bir ihlal tespiti durumunda, ilgili veriler soruşturma ve yargı süreci sonlanana kadar güvenli bir şekilde muhafaza edilir.
+
+**6. Son Uyarı
+BHDB Filtreleme Sistemi, dünyanın en gelişmiş siber silahlarından ve savunma sistemlerinden biridir. Bu sistemi kullanma ayrıcalığı, onu koruma sorumluluğu ile doğru orantılıdır.
+
+Bu politikanın kurallarını ihlal etmeyi düşünüyorsanız, lütfen bunun sonuçlarını dikkatlice değerlendirin. Biz değerlendirdik ve her senaryo için en agresif, en caydırıcı yaptırımı uygulamak üzere hazırız.
+
+Güvenlik bizim DNA'mızdır. İhanet ise asla tolere edilmeyecek tek eylemdir. 
+
+
+***!***
+Yukarıdaki BHDB Güvenlik ve Kullanım Politikası'nı sistemi kullanmaya başladığınız ilk andan itibaren kabul etmiş sayılırsınız.
+
+Bu politikanın, bağlı olduğum kurumun iç politikalarından daha üstün ve bağlayıcı olduğunu kabul ediyorum.
+
+Herhangi bir ihlalinin, yukarıda belirtilen agresif yaptırımlarla ve yasal sonuçlarla karşılaşacağını kabul ediyorum.
+
+BHDB'nin, güvenliği tehdit eden her türlü eylem karşısında gerekli tüm teknik ve yasal tedbirleri alma hakkını saklı tuttuğunu kabul ediyorum.
+
+
+
+
+
+
+_________________________________________________
+| BHDB V5 Aurora Güncellemesinde Görüşmek Üzere |
