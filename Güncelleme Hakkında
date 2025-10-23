@@ -1,3 +1,85 @@
+BHDB FS v2025.10.23.1 (v3.1.23) [Kararlılık Optimizasyonu + Yapay Zeka Geliştirmeleri + Yeni Entegrasyonlar]
+
+       *Çekirdek Sistem & Güvenlik İyileştirmeleri*
+
+-Akıllı Tehdit Öngörü Sistemi v3.1: Derin öğrenme modelleri, kullanıcı davranışlarını 0.02 saniye altında işleyerek %99.8 doğruluk oranına ulaştı. Anomali tespit algoritmaları, artık mevsimsel trendleri ve global olayları da hesaba katarak daha isabetli tahminler yapabilior.
+-Otonom Güvenlik Duvarı (H.S.W.) Güncellemesi: Göz tanımlama sistemi, perdeleyici cam ve maske gibi engellere karşı %95 başarı oranına çıkarıldı. Ses algılama sistemi, 60'tan fazla dil ve lehçedeki tehdit içerikli konuşmaları gerçek zamanlı olarak işaretleyebilir.
+-Kuantum Şifreleme Hazırlık Paketi (Genişletilmiş): NIST kabul edilebilirliği seviyesinde "CRYSTALS-Kyber" ve "Falcon" post-kuantum algoritmaları sisteme entegre edildi. Mevcut hibrit şifreleme, kuantum ağ simülasyon testlerinde başarıyla doğrulandı.
+
+       *Veri İşleme & Analitik Geliştirmeleri*
+
+-3D Tehdit Haritalandırma Geliştirmeleri: Harita üzerinde birden fazla saldırı vektörünün aynı anda simülasyonu eklendi. Artırılmış gerçeklik (AR) modu, fiziksel sunucu odalarında sanal tehdit verilerini görüntülemek için kullanılabiliyor.
+-Zaman Makinesi (Gelişmiş Forensic Modül): Sistem snapshot'ları arasında "diff" (fark) analizi yapabilme özelliği eklendi. Belirli bir kullanıcının belirli bir zaman aralığındaki tüm aktiviteleri tek bir sorguyla izlenebilir. (for admin)
+-Duygusal Analiz Sistemi v2: Metin analizine ek olarak, sesli aramalardan duygu durumu tespiti (öfke, stres, aldatma güdüsü) yapabilme kapasitesi kazandırıldı. Analiz sonuçları risk skoruna doğrudan etki ediyor.
+
+       *Performans & Altyapı Optimizasyonları*
+
+-Edge Computing Genişletmesi: 5G ağları için ultra düşük gecikmeli (< 1ms) filtreleme modülleri devreye alındı. IoT cihazlarda çalışan lightweight modülün bellek tüketimi %40 azaltıldı.
+-Öngörülü Kaynak Yönetimi (Güncel): AI destekli load balancer, haftalık ve aylık trend verilerine dayanarak olası trafik patlamalarından 2 saat önce otomatik scaling başlatabiliyor.
+-Veri Tabanı Kümeleme: V2020.01.01 tabanlı yeni veritabanı mimarisi, yatay ölçeklenebilirliği artırmak için tamamen kümelenmiş (clustered) yapıya geçirildi. Sorgu performansında ortalama %30 iyileşme sağlandı.
+
+       *Kullanıcı Deneyimi & Arayüz Güncellemeleri*
+
+-Sesli Kontrol Arayüzü (Gelişmiş): Arapça lehçe desteği (Mısır, Körfez) genişletildi. Karmaşık, çok adımlı filtreleme kuralları artık sesli komutlarla oluşturulabilir.
+-Kişiselleştirilebilir Dashboard v2: "Kritik Olay Özeti" adlı yeni bir akıllı widget eklendi. Kullanıcının rolüne göre dashboard'u otomatik olarak yeniden düzenleyen "Akıllı Layout Asistanı" aktif edildi.
+-Evrensel Erişilebilirlik Paketi: Görme ve işitme engelli operatörler için ekran okuyucu uyumluluğu ve yüksek kontrast modları sisteme entegre edildi.
+
+
+       *Yeni Servis & Entegrasyonlar*
+
+-FaaS (Filtering-as-a-Service) Genişletmesi: Müşterilerin kendi yazdıkları basit Python/JavaScript kod parçacıklarını filtre zincirine entegre edebildiği "Micro-Function" özelliği beta olarak sunulmaya başlandı.
+-Mobil Sistem MMX Güncellemesi: !! Mobil cihazlardan gelen konum verisi, tehdit haritalandırmasına anonim olarak entegre edildi. Mobil uygulama, acil durum modunda 48 saat boyunca offline çalışabilir hale getirildi.
+-BHFS2 Analiz ve İşleme Alma Sistemi (Güncel): İkincil filtreleme sisteminin (BHFS2) kapasitesi iki katına çıkarıldı ve artık birincil sistemle tam senkronize, sıfır veri kaybıyla çalışıyor.
+
+       *Güvenlik & Uyumluluk*
+
+-Blockchain Doğrulama Sistemi (Güncel): Tüm konfigürasyon değişiklikleri ve kullanıcı eylemleri için değiştirilemez (immutable) audit log'lar oluşturuluyor. Dış denetim firmaları için salt okunur (read-only) API erişimi açıldı.
+-GDPR/HIPAA Uyumluluk Asistanı Güncellemesi: "Unutulma Hakkı" (Right to be Forgotten) taleplerini otomatik olarak işleyip tüm alt sistemlerden ilgili kişisel verileri silen otomasyon eklendi.
+
+       *Arka Plan & Altyapı* (Ek Güncelleme Notları)
+
+-Sistem genelinde kullanılan tüm açık kaynak kütüphaneleri güvenlik açıkları taramasından geçirildi ve güncellendi.
+-dap10 İşletim Sistemi Projesi için geliştirme ortamı sunucuları hazırlandı ve test aşamasına geçildi.
+-TR6 ve EU7 sunucularına yedek güç kaynakları ve fiber internet hatları eklendi, fiziksel kararlılık artırıldı.
+-Project: "Aurora" - Küresel Özel Fiber Ağ: ISS'lerden bağımsız, kıtalararası, derin deniz altı fiber optik ağ altyapısının ikinci fazına geçildi. Bu faz tamamlandığında, veri iletim gecikmesi mevcut internet omurgasına kıyasla %60 oranında azalmış olacak ve tamamen BHDB kontrolüne girecek.
+-Project: "Sentinel" - Otonom Veri Merkezi Yönetimi: Yapay zeka destekli fiziksel güvenlik ve bakım. Veri merkezlerinde; sıcaklık, nem, enerji tüketimi ve fiziksel erişimi 7/24 izleyen, anormallik durumunda insan müdahalesi gerektirmeden aksiyon alabilen (soğutmayı artırma, güvenlik bariyerlerini kapatma vb.) otonom sistemler pilot olarak TR6 ve EU7 tesislerinde devreye alındı.
+-Kuantum İletişim Test Ağı (Q-Backbone): Kuantum anahtar dağıtımı (QKD) protokollerinin test edildiği, BHDB'ye ait özel bir iletişim ağı şebekesi. Ankara-İstanbul hattında kurulu olan test ağımız, %100 güvenli iletişim sağlamayı başardı. Önümüzdeki dönemde Londra ve Frankfurt genişlemesi planlanıyor.
+-BHDB Bulut Noktası Genişletmesi: Arşivleme ve "soğuk" veri depolama kapasitesi, yeni nesil manyetik bant kütüphaneleri ile 1 Ekabyte'a çıkarıldı. Erişim hızları, özel geliştirilen indeksleme algoritması sayesinde 8-10 kat iyileştirildi.
+-BHDB Özgün Yazılım Kütüphanesi (BH-Lib): Tüm BHDB geliştirme projelerinde kullanılmak üzere, güvenlik açığı riski taşıyan tüm üçüncü parti kütüphaneleri değiştirmeyi hedefleyen, içe dönük bir yazılım kütüphanesi geliştiriliyor. İlk modül olan kriptografi kütüphanesi (BH-Crypto) aktif olarak kullanımda. (Tam kullanım v4 ü bulacaktır.)
+-Siber-Dayanıklılık Simülasyonları (SDS): Fiziksel saldırı, doğal afet veya kitlesel siber saldırı senaryolarında sistemlerin nasıl davranacağını ve hizmet sürekliliğini test eden aylık tatbikatlar otomasyona bağlandı. (Ayda 2 defa otomatik olarak gerçekleştirilecek)
+
+***BHDB FS v/Next - Yeni Servis ve Projeler (Planlama Aşaması)
+
+S.P.H.I.N.X. (Sentient Protocol Handler & Intelligent Nexus): Ağ trafiğindeki bilinmeyen veya özel protokolleri otomatik olarak deşifre edip, yapısını anlayan ve ona özgü filtreleme kuralları geliştirebilen yeni nesil bir AI modülü.
+
+M.N.E.M.O.S.Y.N.E. (Multimodal Neural Encoding & Memory Optimization for SYstem-wide Network Events):
+Sistem genelinde yaşanan tüm olayları (log'lar, tehditler, kullanıcı eylemleri) geleneksel veritabanı yerine, birbirine bağlı sinir ağları (associative neural networks) kullanarak kaydeden ve anında ilişkili bilgilere ulaşım sağlayan deneysel bir bellek sistemi.
+
+C.H.I.M.E.R.A. (Covert & Hybrid Intelligence Monitoring for External Risk Assessment):
+Açık kaynak (OSINT), yarı-açık ve karanlık web veri kaynaklarını sürekli tarayarak, BHDB FS müşterilerine veya altyapısına yönelik olası tehditleri derleyen ve raporlayan pasif bir istihbarat servisi.
+
+V.O.X. (Vocal Omni-analysis eXpansion):
+Sesli kontrolden öteye geçerek, sesli ve görüntülü iletişimdeki stres, mikro-ifadeler, konuşma hızı değişiklikleri ve arka plan gürültüsünü analiz ederek iletişimin "niyet" ve "doğruluk" seviyesini değerlendiren gelişmiş bir analiz servisi. (Mevcut haline ek güncellemeler)
+
+
+|New| Proje: "ODYSSEY" - Birincil Filtreleme AI'sının Evrimi:
+Mevcut AI'nın, merkezi sunucular yerine, "Aurora" ağı üzerindeki tüm düğüm noktalarında (edge) dağıtık olarak çalışabilen, merkezi olmayan (decentralized) ve kendi kendine öğrenme yeteneği kat kat artırılmış yeni nesil bir versiyonunun geliştirilmesi projesi.
+
+
+|New| Projee: "ARES" (Autonomous response & enforcement System):
+Tespit edilen yüksek seviyeli bir siber tehdide, insan onayına gerek kalmadan, önceden tanımlanmış kurallar çerçevesinde (örneğin, saldırganın internet bağlantısını kesmek, saldırı kaynağını kendi içinde izole etmek gibi) pro-aktif karşılık verebilen otonom bir savunma sistemi prototipi.
+
+|New| Proje: "STARGAZER" - Küresel Veri Akışı Haritalandırma:
+Dünya üzerindeki tüm büyük veri akışlarının yoğunluk, gecikme, kaynak ve hedef bilgilerini neredeyse gerçek zamanlı olarak görselleştiren, 3D tehdit haritasının bir üst seviyesi olacak devasa bir dijital dünya modeli oluşturma projesi.
+
+|New| Proje: "FORGE" - Donanım Bağımsız Çalışan Sanal Güvenlik Modülleri:
+BHDB filtreleme sistemi ve FS'ye ait H.S.W. güvenlik yazılımının, herhangi bir işletim sistemine veya donanıma bağımlı kalmadan, sanal bir katman (hypervisor seviyesi) üzerinde doğrudan çalışabilen "bare-metal" güvenlik çözümlerine dönüştürülmesi araştırma projesi.
+
+|New| Web Arayüzü:
+BHDB FS v4 ile kısıtlı kullanıcıya hizmete geçerken tam güvenlikli kullanıcı arayüzü bhdbfs digital.
+
+***
+_____________________________________________________________________________________
 BHDB FS v2025.07.01.2005 (v3) [Güvenlik Güncellemesi + Ek Servisler + Kararlı Sürüm]
 - Akıllı Tehdit Öngörü Sistemi: Kullanıcı davranış analizleriyle olası güvenlik ihlallerini önceden tahmin eden AI modülü. Gerçek zamanlı risk skorlama algoritmaları.
 - Otomatik Anomali Tespiti: Sistem aktivitelerinde standart dışı davranışları tanımlayan self-learning algoritmalar. Dinamik eşik değerleriyle uyarlanabilir uyarı mekanizması
